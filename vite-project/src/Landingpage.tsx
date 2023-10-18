@@ -31,6 +31,16 @@ function Landingpage() {
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png"
+              alt=""
+              className="icon"
+            />
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png"
+              alt=""
+              className="icon2"
+            />
           </Container>
         </Navbar>
       </div>
@@ -58,7 +68,7 @@ function Landingpage() {
           </Row>
         </Container>
       </div>
-      <div>
+      <div className="heading-div">
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container className="mid-navbar">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -66,8 +76,28 @@ function Landingpage() {
               <Nav className="me-auto">
                 <Nav.Link href="#home">Latest</Nav.Link>
                 <Nav.Link href="#link">Popular</Nav.Link>
-                <Nav.Link href="#link">Premium</Nav.Link>
-                <Nav.Link href="#link">Free</Nav.Link>
+                <Nav.Link href="#link">
+                  <span className="premium-span">Premium</span>
+                </Nav.Link>
+                <Nav.Link href="#link">
+                  <span className="free-span">Free</span>
+                </Nav.Link>
+                <svg
+                  className="svg-icon first-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+                <svg
+                  className="svg-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <path d="M0 96C0 43 43 0 96 0h96V190.7c0 13.4 15.5 20.9 26 12.5L272 160l54 43.2c10.5 8.4 26 .9 26-12.5V0h32 32c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32H384 96c-53 0-96-43-96-96V96zM64 416c0 17.7 14.3 32 32 32H352V384H96c-17.7 0-32 14.3-32 32z" />
+                </svg>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -143,7 +173,7 @@ function Landingpage() {
           </Row>
         </Container>
       </div>
-      <div>
+      <div className="last-div">
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -155,11 +185,11 @@ function Landingpage() {
                     Collections
                   </u>
                 </Nav.Link>
-                <Nav.Link href="#link">
-                  {" "}
-                  <Button variant="light">Next Page</Button>
-                </Nav.Link>
+                <Nav.Link href="#link"> </Nav.Link>
               </Nav>
+              <Button className="next-page-button" variant="light">
+                Next Page
+              </Button>
               <span className="pag1">Page</span>
               <Pagination size="sm" className="page-div">
                 <Pagination.Prev />
