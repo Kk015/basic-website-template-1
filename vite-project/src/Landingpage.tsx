@@ -60,7 +60,7 @@ function Landingpage() {
       </div>
       <div>
         <Navbar expand="lg" className="bg-body-tertiary">
-          <Container>
+          <Container className="mid-navbar">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -74,45 +74,69 @@ function Landingpage() {
         </Navbar>
         <Container>
           <Row>
-            <Col>
+            <Col className="card-div" md={4}>
               {" "}
-              <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+              <Card style={{ width: "22rem" }}>
+                <Card.Img
+                  variant="top"
+                  className="card-imges"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRXGOnNnX9wU_VgH2SkZnEWFEcQEczCQ4qAQ&usqp=CAU"
+                />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Card.Title>
+                    <span className="big-letter">D</span>og Illustration
+                  </Card.Title>
+
+                  <Button variant="white">
+                    {" "}
+                    <span className="download-span">
+                      <u>Download</u>
+                    </span>
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col className="card-div" md={4}>
               {" "}
-              <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+              <Card style={{ width: "22rem" }}>
+                <Card.Img
+                  variant="top"
+                  className="card-imges"
+                  src="https://static.vecteezy.com/system/resources/previews/004/539/451/non_2x/vintage-design-astronaut-riding-bicycle-retro-vintage-illustration-vector.jpg"
+                />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Card.Title>
+                    <span className="big-letter">A</span>strounut
+                  </Card.Title>
+
+                  <Button variant="white">
+                    {" "}
+                    <span className="download-span">
+                      <u>Download</u>
+                    </span>
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col className="card-div" md={4}>
               {" "}
-              <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+              <Card style={{ width: "22rem" }}>
+                <Card.Img
+                  variant="top"
+                  className="card-imges"
+                  src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2019/08/19/bf7449c4-8978-4589-b68d-118d2c87b374/dutch-van-der-linde-rockstar"
+                />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Card.Title>
+                    <span className="big-letter">R</span>ockstar
+                  </Card.Title>
+
+                  <Button variant="white">
+                    {" "}
+                    <span className="download-span">
+                      <u>Download</u>
+                    </span>
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -125,26 +149,24 @@ function Landingpage() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
+                <Nav.Link href="#home">
+                  <u>
+                    Discover all <br />
+                    Collections
+                  </u>
+                </Nav.Link>
+                <Nav.Link href="#link">
+                  {" "}
+                  <Button variant="light">Next Page</Button>
+                </Nav.Link>
               </Nav>
-              <Pagination>
-                <Pagination.First />
+              <span className="pag1">Page</span>
+              <Pagination size="sm" className="page-div">
                 <Pagination.Prev />
                 <Pagination.Item>{1}</Pagination.Item>
-                <Pagination.Ellipsis />
-
-                <Pagination.Item>{10}</Pagination.Item>
-                <Pagination.Item>{11}</Pagination.Item>
-                <Pagination.Item active>{12}</Pagination.Item>
-                <Pagination.Item>{13}</Pagination.Item>
-                <Pagination.Item disabled>{14}</Pagination.Item>
-
-                <Pagination.Ellipsis />
-                <Pagination.Item>{20}</Pagination.Item>
                 <Pagination.Next />
-                <Pagination.Last />
               </Pagination>
+              <span>of 120</span>
             </Navbar.Collapse>
           </Container>
         </Navbar>
